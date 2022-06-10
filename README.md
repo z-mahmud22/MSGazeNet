@@ -4,4 +4,4 @@ This is the official implementation of our work entitled "Multistream Gaze Estim
 
 The repository contains the source code of our paper where we use the following datasets: 
 
-* MPIIGaze
+* [MPIIGaze](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/gaze-based-human-computer-interaction/appearance-based-gaze-estimation-in-the-wild) 
