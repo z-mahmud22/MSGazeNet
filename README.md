@@ -4,4 +4,4 @@ This is the official implementation of our work entitled "Multistream Gaze Estim
 
 The repository contains the source code of our paper where we use the following datasets: 
 
-asterisk “*” 
+* MPIIGaze
