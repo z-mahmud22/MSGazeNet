@@ -22,7 +22,6 @@ import warnings
 from utils import create_trainset, create_testset
     
 if __name__ == "__main__":
-  #os.environ['CUDA_VISIBLE_DEVICES'] = '0'
   config = yaml.load(open('/configs/eyediap_config.yaml'), Loader=yaml.FullLoader)
   config = config["train"]
   cudnn.benchmark=True
