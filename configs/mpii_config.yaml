@@ -8,7 +8,7 @@ train:
     decay_step: 5000
     loss: MSELoss
   save:
-    save_path: "/weights/ge_weights"
+    save_path: "/weights/ge_weights/mpii"
   data:
     image: "/Data/mpiigaze/Image"
     label: "/Data/mpiigaze/Label"
