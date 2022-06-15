@@ -10,6 +10,17 @@ import numpy as np
 import random
 import cv2
 
+def create_trainset(folder, input_list):
+      for j in input_list:
+          folder.remove(j)
+      return folder
+  
+def create_testset(input_list):
+    new_folder = []
+    for j in input_list:
+        new_folder.append(j)
+    return new_folder
+
 # =============================================================================
 # GAZE FUNCTIONS
 # =============================================================================
