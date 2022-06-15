@@ -121,12 +121,7 @@ if __name__ == "__main__":
             resttime = (timeend - timebegin)/cur * (total_train-cur)/3600
             log = f"[{epoch}/{config['params']['epoch']}]: [{i}/{train_length}] Train_loss:{loss} Train_AE:{mean_angular_error(gaze.cpu().detach().numpy(),label.cpu().detach().numpy(), gaze.shape[0])} lr:{optimizer.param_groups[0]['lr']}, remaining time:{resttime:.2f}h"
             print(log)
-            '''
-            outfile.write(log + "\n")
-            sys.stdout.flush()   
-            outfile.flush()
-            '''
-           
+            
         train_epoch_loss = train_loss/train_count
         train_epoch_acc = train_accs/train_count
         
