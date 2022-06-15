@@ -10,7 +10,7 @@ from Data_Loader_Unet import trainset
 import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
-from unet_model import UNet
+from models.aeri_unet import AERI_UNet
 import torch.optim as optim
 import torch.nn as nn
 from torch.utils.tensorboard import SummaryWriter
@@ -22,7 +22,7 @@ writer = SummaryWriter('/path/to/summary')
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 print("Model building")
-net=UNet().to(device)
+net=AERI_UNet().to(device)
 
 print("optimizer building")
 optimizer = optim.Adam(net.parameters(), lr=0.00001)
