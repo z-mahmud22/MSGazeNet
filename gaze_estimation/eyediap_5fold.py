@@ -19,17 +19,7 @@ import yaml
 import torch.backends.cudnn as cudnn
 import torch.multiprocessing as mp
 import warnings
-
-def create_trainset(folder, input_list):
-      for j in input_list:
-          folder.remove(j)
-      return folder
-  
-def create_testset(input_list):
-    new_folder = []
-    for j in input_list:
-        new_folder.append(j)
-    return new_folder
+from utils import create_trainset, create_testset
     
 if __name__ == "__main__":
   #os.environ['CUDA_VISIBLE_DEVICES'] = '0'
