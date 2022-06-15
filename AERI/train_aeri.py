@@ -6,7 +6,7 @@ Created on Tue Mar 1 17:35:03 2022
 """
 
 import os
-from Data_Loader_Unet import trainset
+from loader_aeri import trainset
 import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
