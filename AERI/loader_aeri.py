@@ -27,7 +27,7 @@ data_transforms=transforms.Compose([
 
 class trainset(Dataset):
     def __init__(self):
-        self.image_path="./images/" # path to the EyeMask dataset
+        self.image_path="/Data/EyeMask/" # path to the EyeMask dataset
         
     
     def __getitem__(self, idx):
