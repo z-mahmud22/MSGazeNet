@@ -27,7 +27,7 @@ Please follow the steps below to train MSGazeNet:
     pip install -r requirements.txt
     ```
 3. Download all the datasets and preprocess them following Zhang et al. [1] or [GazeHub] (http://phi-ai.buaa.edu.cn/Gazehub/) [2]
-4. Place all the datasets into the 'Data' directory in the following structure
+4. Place all the datasets into the 'Data' directory according to the following 
     ```
     Data
     ├───eyediap
