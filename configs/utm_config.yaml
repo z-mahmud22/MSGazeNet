@@ -11,4 +11,4 @@ train:
     save_path: "/weights/ge_weights/utm"
   data:
     image: "/Data/utmultiview/Image"
-    label: "/Data/utmultiview/Label/test"
+    label: "/Data/utmultiview/Label"
