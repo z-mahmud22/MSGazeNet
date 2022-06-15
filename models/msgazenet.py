@@ -61,9 +61,9 @@ class NetworkBlock(nn.Module):
     def forward(self, x):
         return self.layer(x)
         
-class msgazenet(nn.Module):
+class MSGazeNet(nn.Module):
     def __init__(self, first_stride, num_classes, depth=28, widen_factor=2, drop_rate=0.0, is_remix=False):
-        super(msgazenet, self).__init__()
+        super(MSGazeNet, self).__init__()
         channels = [16, 16 * widen_factor, 32 * widen_factor, 64 * widen_factor]
         assert ((depth - 4) % 6 == 0)
         n = (depth - 4) / 6
@@ -154,7 +154,7 @@ class build_msgazenet:
         self.is_remix = is_remix
 
     def build(self, num_classes):
-        return msgazenet(
+        return MSGazeNet(
             first_stride=self.first_stride,
             depth=self.depth,
             num_classes=num_classes,
