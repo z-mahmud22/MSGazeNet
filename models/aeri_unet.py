@@ -10,9 +10,9 @@ import torch.nn as nn
 from unet_codes.unet_parts import *
 
 
-class UNet(nn.Module):
+class AERI_UNet(nn.Module):
     def __init__(self, n_channels=1, n_classes=2, bilinear=True):
-        super(UNet, self).__init__()
+        super(AERI_UNet, self).__init__()
         self.n_channels = n_channels
         self.n_classes = n_classes
         self.bilinear = bilinear
@@ -44,4 +44,4 @@ class UNet(nn.Module):
         logits = self.outlayer(logits)
         return logits
     
-# model = UNet(1,2)
+# model = AERI_UNet(1,2)
