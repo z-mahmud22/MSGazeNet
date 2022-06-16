@@ -26,7 +26,7 @@ Please follow the steps below to train MSGazeNet:
     ```
     pip install -r requirements.txt
     ```
-3. Download all the datasets and preprocess them following Zhang et al. [1] or [GazeHub] (http://phi-ai.buaa.edu.cn/Gazehub/) [2]
+3. Download all the datasets and preprocess them following Zhang et al. [1] 
 4. Place all the datasets into the 'Data' directory according to the following 
     ```
     Data
@@ -65,7 +65,3 @@ Please email me your questions or concerns at zunayed.mahmud@queensu.ca
 [1] X. Zhang, Y. Sugano, and A. Bulling, “Revisiting data normalization
 for appearance-based gaze estimation,” in Proceedings of the 2018 ACM
 Symposium on Eye Tracking Research & Applications, 2018, pp. 1–9.
-
-[2] Cheng, Y.; Wang, H.; Bao, Y.; and Lu, F. 2021. Appearance-based
-Gaze Estimation With Deep Learning: A Review and Benchmark.
-arXiv preprint arXiv:2104.12668.
