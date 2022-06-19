@@ -22,7 +22,7 @@ Please follow the steps below to train MSGazeNet:
     ```
     conda create -n <environment name>
     ```
-    Install Requirements
+    Install requirements
     ```
     pip install -r requirements.txt
     ```
