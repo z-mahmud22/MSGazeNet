@@ -11,7 +11,7 @@ The repository contains the source code of our paper where we use the following 
 
 # Prerequisites
 Please follow the steps below to train MSGazeNet:
-1. Create a virtual environment
+1. Create a virtual environment with required libraries 
 
     To create a virtual environment via python:
     ```
@@ -22,7 +22,7 @@ Please follow the steps below to train MSGazeNet:
     ```
     conda create -n <environment name>
     ```
-    2. Install Requirements
+    Install Requirements
     ```
     pip install -r requirements.txt
     ```
