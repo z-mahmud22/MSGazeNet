@@ -1,5 +1,5 @@
 # MSGazeNet
-This is the official implementation of our work entitled "Multistream Gaze Estimation with Anatomical Eye Region Isolation by Synthetic to Real Transfer Learning" in PyTorch (Version 1.9.0).
+This is the official implementation of our work entitled [Multistream Gaze Estimation with Anatomical Eye Region Isolation by Synthetic to Real Transfer Learning] (https://arxiv.org/abs/2206.09256) in PyTorch (Version 1.9.0).
 
 ![Alt text](/figures/msgazenet.png?raw=true "Optional Title") 
 
