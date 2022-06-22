@@ -7,7 +7,7 @@ Created on Tue Mar 1 17:35:03 2022
 
 import torch.nn.functional as F
 import torch.nn as nn
-from unet_codes.unet_parts import *
+from models.unet_parts import *
 
 
 class AERI_UNet(nn.Module):
