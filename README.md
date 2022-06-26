@@ -59,6 +59,15 @@ Please follow the steps below to train MSGazeNet:
     ```
     python gaze_estimation/utm_3fold.py
     ```
+# Citation
+```
+@article{mahmud2022multistream,
+  title={Multistream Gaze Estimation with Anatomical Eye Region Isolation by Synthetic to Real Transfer Learning},
+  author={Mahmud, Zunayed and Hungler, Paul and Etemad, Ali},
+  journal={arXiv preprint arXiv:2206.09256},
+  year={2022}
+}
+```
 # Contact 
 Please email me your questions or concerns at zunayed.mahmud@queensu.ca
 # References   
