@@ -84,7 +84,7 @@ if __name__ == "__main__":
     optimizer = optim.Adam(net.parameters(),lr=base_lr)
     scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=decayratio, patience=3)
 
-    print("Traning")
+    print("Training")
     train_length = len(train_dataset)
     total_train = train_length * config["params"]["epoch"]
     cur = 0
