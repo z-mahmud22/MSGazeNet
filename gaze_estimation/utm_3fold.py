@@ -69,12 +69,12 @@ if __name__ == "__main__":
     test_dataset = reader.txtload(testlabelpath, imagepath, config['params']['batch_size'], device, mode='test', shuffle=True, num_workers=0, header=True)
 
     print("Model building")
-    model_builder = msgazenet.build_WideResNet_f3(1, 16, 4, 0.01, 0.1, 0.5)
+    model_builder = msgazenet.build_msgazenet(1, 16, 4, 0.01, 0.1, 0.5)
     net = model_builder.build(2)
     net.train()
     net.to(device)
 
-    print("optimizer building")
+    print("Optimizer building")
     lossfunc = config["params"]["loss"]
     loss_op = getattr(nn, lossfunc)().cuda()
     base_lr = config["params"]["lr"]
