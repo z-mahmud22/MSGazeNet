@@ -23,7 +23,7 @@ class train_loader(Dataset):
     self.lines = []
     self.device = device
     self.isolator = AERI_UNet().to(self.device)
-    self.checkpoint = torch.load("/weights/aeri_weights/.t7") # load the weights of the AERI network
+    self.checkpoint = torch.load("/weights/aeri_weights/*.t7") # load the weights of the AERI network
     self.isolator.load_state_dict(self.checkpoint['state_dict'])
     
     if isinstance(path, list):
@@ -90,7 +90,7 @@ class test_loader(Dataset):
     self.lines = []
     self.device = device
     self.isolator = AERI_UNet().to(self.device)
-    self.checkpoint = torch.load("/weights/aeri_weights/.t7") # load the weights of the AERI network
+    self.checkpoint = torch.load("/weights/aeri_weights/*.t7") # load the weights of the AERI network
     self.isolator.load_state_dict(self.checkpoint['state_dict'])
     
     if isinstance(path, list):
