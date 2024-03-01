@@ -61,12 +61,16 @@ Please follow the steps below to train MSGazeNet:
     ```
 # Citation
 ```
-@article{mahmud2022multistream,
-  title={Multistream Gaze Estimation with Anatomical Eye Region Isolation by Synthetic to Real Transfer Learning},
+@ARTICLE{10438413,
   author={Mahmud, Zunayed and Hungler, Paul and Etemad, Ali},
-  journal={arXiv preprint arXiv:2206.09256},
-  year={2022}
-}
+  journal={IEEE Transactions on Artificial Intelligence}, 
+  title={Multistream Gaze Estimation with Anatomical Eye Region Isolation by Synthetic to Real Transfer Learning}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-15},
+  keywords={Estimation;Synthetic data;Head;Iris;Feature extraction;Training;Lighting;Gaze estimation;eye region segmentation;multistream network;deep neural network;domain randomization;transfer learning},
+  doi={10.1109/TAI.2024.3366174}}
 ```
 # Contact 
 Please email me your questions or concerns at zunayed.mahmud@queensu.ca
