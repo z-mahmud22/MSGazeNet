@@ -39,9 +39,7 @@ def angular(gaze, label):
   return np.arccos(min(total/(np.linalg.norm(gaze)* np.linalg.norm(label)), 0.9999999))*180/np.pi
   
 def mean_angular_error(a, b, batch_size):
-  error=0
-  for k, g_pred in enumerate(a):
-      error+=angular(gazeto3d(g_pred), gazeto3d(b[k]))
+  error = np.sum([angular(gazeto3d(g_pred), gazeto3d(b[k])) for k, g_pred in enumerate(a)])
   return error/batch_size
 
 
